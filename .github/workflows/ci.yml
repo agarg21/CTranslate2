@@ -1,9 +1,8 @@
 name: CI
 
 on:
+  # fork-only measurement harness: branch pushes do not trigger (PR runs only)
   push:
-    branches:
-      - "**"
     tags:
       - v*
   pull_request:
